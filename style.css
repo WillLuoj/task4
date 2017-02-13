@@ -1,0 +1,25 @@
+* {
+    margin:0;
+    padding:0;
+}
+html,body {
+    background-color: #eff0f4;
+    width:100vw;
+}
+.header {
+    background-color: #5fc0cd;
+    position: fixed;
+    width:100vw;
+    height:40px;
+
+}
+.head_left {
+    float: left;
+}
+.head_right {
+    float:right;
+}
+.head_mid {
+    margin:0 20%;
+    text-align:center;
+}
