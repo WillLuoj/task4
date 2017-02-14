@@ -2,25 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <title>signin</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div class="header">
+   <div class="header">
         <div class="head_left"><p>关闭</p></div>
         <div class="head_right"><p>注册</p></div>
         <div class="head_mid"><p>登录</p></div>
     </div>
     <div class="container">
         <form>
-            <input type="text" name="user_id" placeholder="请输入手机号">
-            <input type="password" name="password" placeholder="请输入密码">
+            <div class="id">
+                <label for="user_id">
+                    <img src="image/id.png">
+                </label>
+                <input type="text" id="user_id" placeholder="请输入手机号">
+            </div>
+           <div class="pas">
+               <label for="password">
+                   <img src="image/pas.png">
+               </label>
+               <input type="password" id="password" placeholder="请输入密码">
+           </div>
         </form>
     </div>
     <div class="footer">
         <form>
-            <input type="submit" value="登录">
+            <button type="submit" onclick="alert('登录成功')">登录</button>
         </form>
     </div>
+
 </body>
 </html>

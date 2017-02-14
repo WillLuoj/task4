@@ -4,22 +4,98 @@
 }
 html,body {
     background-color: #eff0f4;
-    width:100vw;
+    /*width:100vw;*/
+    min-width: 320px;
+    width:100%;
 }
-.header {
+
+.header,.footer {
     background-color: #5fc0cd;
     position: fixed;
     width:100vw;
-    height:40px;
-
+    height:86px;
+    /*min-height: 40px;*/
 }
+
 .head_left {
     float: left;
+    margin-left: 4%;
 }
 .head_right {
     float:right;
+    margin-right: 4%;
 }
 .head_mid {
     margin:0 20%;
     text-align:center;
+}
+p {
+    font:1em "Microsoft Yahei";
+    color: white;
+    line-height: 86px;
+
+}
+.head_mid p {
+    font-size: 1.2em;
+}
+.container {
+    position: absolute;
+    top:86px;
+}
+.id,.pas {
+    background-color: white;
+    margin-top: 2.5vw;
+    width:100vw;
+    height:14vw;
+    overflow: hidden;
+}
+label {
+    float: left;
+    width: 23%;
+    height: 14vw;
+    text-align: center;
+    display: inline-block;
+}
+img {
+    position: relative;
+    display: inline-block;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 30%;
+    max-width: 27px;
+}
+input {
+    float: left ;
+    position: relative;
+    height: 42px;
+    width: 70%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 0;
+    border-left:2px solid #EAEDEE;
+    text-indent: 5em;
+    font: 1em "Microsoft Yahei";
+    outline: none;
+}
+
+button {
+    border: none;
+    font-size: 1.2em;
+    font-family: Microsoft YaHei, serif;
+    color: white;
+    background: rgb(95,192,205);
+    width: 100%;
+}
+.footer{
+    top: 50vw;
 }
