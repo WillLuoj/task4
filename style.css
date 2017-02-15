@@ -2,24 +2,19 @@
     margin:0;
     padding:0;
 }
-html,body {
+body {
     background-color: #eff0f4;
-    /*width:100vw;*/
     min-width: 320px;
-    width:100%;
 }
-
 .header,.footer {
     background-color: #5fc0cd;
-    position: fixed;
     width:100vw;
     height:86px;
-    /*min-height: 40px;*/
 }
-
 .head_left {
     float: left;
     margin-left: 4%;
+    vertical-align: middle;
 }
 .head_right {
     float:right;
@@ -33,18 +28,13 @@ p {
     font:1em "Microsoft Yahei";
     color: white;
     line-height: 86px;
-
 }
 .head_mid p {
     font-size: 1.2em;
 }
-.container {
-    position: absolute;
-    top:86px;
-}
 .id,.pas {
     background-color: white;
-    margin-top: 2.5vw;
+    margin-top: 16px;
     width:100vw;
     height:14vw;
     overflow: hidden;
@@ -54,40 +44,46 @@ label {
     width: 23%;
     height: 14vw;
     text-align: center;
-    display: inline-block;
 }
 img {
+    max-width: 27px;
+    width: 20%;
     position: relative;
     display: inline-block;
+    /*使图片居中*/
     top: 50%;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
-    width: 30%;
-    max-width: 27px;
 }
 input {
     float: left ;
     position: relative;
     height: 42px;
     width: 70%;
+    /*使输入框居中*/
     top: 50%;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
+    /*清除输入框样式*/
     -webkit-appearance: none;
     -moz-appearance: none;
+    /*去掉输入框边框*/
     border: 0;
     border-left:2px solid #EAEDEE;
     text-indent: 5em;
     font: 1em "Microsoft Yahei";
+    /*去除点击输入框的边框颜色*/
     outline: none;
 }
-
+.footer{
+    margin-top:10vw;
+}
 button {
     border: none;
     font-size: 1.2em;
@@ -95,7 +91,5 @@ button {
     color: white;
     background: rgb(95,192,205);
     width: 100%;
-}
-.footer{
-    top: 50vw;
+    line-height: 86px;
 }
